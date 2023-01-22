@@ -29,7 +29,6 @@ incrementBtn.addEventListener(
   "click",
   function () {
     counter.increment();
-    console.log(counter);
     valueEl.textContent = counter.value;
   }
 );
