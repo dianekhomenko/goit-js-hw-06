@@ -17,6 +17,7 @@ const incrementBtn = document.querySelector(
 );
 const valueEl =
   document.querySelector("#value");
+  
 decrementBtn.addEventListener(
   "click",
   function () {
