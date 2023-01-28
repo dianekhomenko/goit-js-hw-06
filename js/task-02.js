@@ -11,11 +11,13 @@ const list = document.querySelector(
   "#ingredients"
 );
 
+const liArray = [];
+
 for (let i = 0; i < ingredients.length; i++) {
   let li = document.createElement("li");
-  li.appendChild(
-    document.createTextNode(ingredients[i])
-  );
+  li.textContent = ingredients[i];
   li.className = "item";
-  list.appendChild(li);
+  liArray.push(li);
 }
+
+list.append(...liArray);
